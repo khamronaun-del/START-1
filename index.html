@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Inquiry Form</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+    <main class="page">
+        <section class="form-card">
+            <p class="label">Khamron Bootcamp Project</p>
+
+            <h1>แบบฟอร์มความสนใจเรียน</h1>
+
+            <p class="Description">กรอกข้อมูลเบื้องต้น เพื่อสรุปเป้าหมายการเรียนรู้ของคุณ</p>
+
+            <form id="inquiryForm">
+                <div class="Form-Group">
+                    <label for="fullName">ชื่อ-นามสกุล</label>
+                    <input 
+                         id="fullName" 
+                         type="text" 
+                         placeholder=" เช่น Apiwat Kiatduriyakul " />
+                </div>
+
+                <div class="Form-Group">
+                    <label for="goal">เป้าหมาย</label>
+                    <input 
+                         id="goal" 
+                         type="text" 
+                         placeholder=" เช่น เปลี่ยนสายงานเป็น Developer" />
+                </div>
+
+                <div class="Form-Group">
+                    <label for="level">พื้นฐานตอนนี้</label>
+                    <Select id="level">
+                        <Option value="">เลือกระดับพื้นฐาน</Option>
+                        <Option value="เริ่มต้นจากศูนย์">เริ่มต้นจากศูนย์</Option>
+                        <Option value="เคยเรียนมาบ้าง">เคยเรียนมาบ้าง</Option>
+                        <Option value="เคยทำโปรเจ็คเล็กๆ">เคยทำโปรเจ็คเล็กๆ</Option>
+                    </Select>
+                         
+                </div>
+
+                <div class="Form-Group">
+                    <label for="message">ข้อมูลเพิ่มเติม</label>
+                    <textarea
+                          id="message"
+                          placeholder="กรอกข้อความเพิ่มเติม"
+                        
+                    ></textarea> 
+                </div>
+                <button type="submit">เก็บข้อมูล</button>
+            </form>
+
+            <div id="result" class="result-box">
+
+            </div>
+        </section>
+    </main>
+    <script src="Script.js"></script>
+</body>
+
+</html>
